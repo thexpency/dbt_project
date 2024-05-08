@@ -1,0 +1,50 @@
+
+version: 2
+
+sources:
+  - name: instacart_dump
+    description: "A clone of the instacart database"
+    database: instacart_dump
+    schema: public 
+    tables: 
+        - name: customers
+          description: raw customer data 
+          column: 
+              - name: customer_id
+                description: primary key for the customer table
+        - name: orders
+          description: raw orders table
+          column:
+              - name: order_id
+                description: primary key for the order table 
+        - name: products
+          description: raw products table
+          column:
+              - name: product_id
+                description: primary key for the product table    
+        - name: payment
+          description: raw payment table
+          column:
+              - name: payment_id
+                description: primary key for the payment table     
+        - name: department
+          description: raw department table
+          column:
+              - name: department_id
+                description: primary key for the department table 
+        - name: credit_card
+          description: credit card table
+          column:
+              - name: card_number
+                description: primary key for the credit card table 
+        - name: aisles
+          description: aisles table
+          column:
+              - name: aisle_id
+                description: primary key for the aisles table 
+
+
+
+
+
+
